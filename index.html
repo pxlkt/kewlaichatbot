@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KewlAIChatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2 class="logo">KewlAIChatbot</h2>
+      <button id="new-chat" class="new-chat">+ New chat</button>
+      <ul class="history">
+        <li>Yesterday's chat</li>
+        <li>Recipe ideas</li>
+        <li>Homework help</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <select id="model" aria-label="Model">
+          <option>KewlAI Mega 1.0</option>
+          <option>KewlAI Turbo 3.5</option>
+          <option>KewlAI Nano</option>
+        </select>
+      </header>
+
+      <section id="chat" class="chat">
+        <div class="msg bot">Hi! I'm KewlAIChatbot. Ask me anything.</div>
+      </section>
+
+      <form id="composer" class="composer">
+        <input id="input" type="text" placeholder="Message KewlAIChatbot..." autocomplete="off">
+        <button id="send" type="submit">Send</button>
+      </form>
+
+      <footer class="footer">Yo check out <a href="https://paperboard.dev">paperboard.dev</a> !!</footer>
+    </main>
+  </div>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-box">
+      <iframe id="rick" width="560" height="315" src="" title="Video" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">no ads link</a></p>
+      <button id="close" class="close">close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
